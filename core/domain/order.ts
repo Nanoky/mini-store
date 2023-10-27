@@ -130,7 +130,6 @@ export class Order extends Entity {
 
     cancel() {
         if (this.status === "Pending") this.status = "Cancelled";
-        else throw new Error("");
     }
 
     deliver() {
